@@ -7,10 +7,10 @@
         :alt="data.heroAlt || 'hero'"
       >
 
-      <h1>WeChat</h1>
+      <h1>Tools</h1>
 
       <h2 class="description">
-        微信相关文章博客
+        常用工具的介绍
       </h2>
 
     </header>
@@ -19,6 +19,7 @@
       <div class="btnList">
           <a  class="btnItem"  href="https://webxiaoma.github.io/project-cli/docs/blogs/" target="_blank"> Project-Cli 项目工程化 → </a>
           <a class="btnItem" href="https://webxiaoma.github.io/web-plugins/docs/blogs/" target="_blank"> 前端插件库 →</a>
+          <a class="btnItem" href="https://webwangjia.github.io/wechat-demo/docs/blogs/" target="_blank"> 微信相关开发 →</a>
       </div>
         
     </div>

@@ -11,15 +11,38 @@ module.exports = {
         searchMaxSuggestions: 15, // 搜索设置数量
         nav: [  // 导航栏 使用了element 导航
             { text: '首页', link: '/' },
-            { text: '公众号', link: "/weChatOfficialAccount/" },
-            { text: '小程序', link: "/applet/" },
+            // { text: '编程软件', link: "/weChatOfficialAccount/" },
+            { text: '电脑',items:[
+                { text: "移动硬盘", link:'/computer/hardDisk.html'},
+            ]},
+            { text: '系统', items:[
+                { text: "Linux系统", link: '/system/deepin.html'},
+                { text: "黑苹果", link:'/system/ios.html'},
+            ]},
+            // { text: '实用软件', link: "/weChatOfficialAccount/" },
         ],
         sidebar: {  // 侧边栏
-            "/weChatOfficialAccount/": [ // 公众号
+            "/programme/": [ // 编程
                 "",
             ],
-            "/applet/":[ // 小程序
-               "",
+            "/computer/": [ // 电脑
+                "hardDisk", // 移动硬盘
+            ],
+            "/system/":[ // 系统
+                {
+                    title: 'Linux系统',
+                    collapsable: true, // 是否可折叠
+                    children: [
+                        'deepin',
+                    ]
+                },
+                {
+                    title: '黑苹果系统',
+                    collapsable: true, // 是否可折叠
+                    children: [
+                        'ios',
+                    ]
+                }
             ]
         },
         sidebarDepth:2,// 侧边栏最大层级 最大只能为2
@@ -32,14 +55,14 @@ module.exports = {
             }
         },
         // 假定是 GitHub. 同时也可以是一个 完整的 GitLab URL
-        repo: 'webwangjia',
+        repo: 'webxiaoma',
         // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
         // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
         repoLabel: 'GitHub',
         // 以下为可选的编辑链接选项
 
         // 假如你的文档仓库和项目本身不在一个仓库：
-        docsRepo: 'webwangjia/wechat-demo/docs/blogs',
+        docsRepo: 'webxiaoma/tools-docs/docs/blogs',
         // 假如文档不是放在仓库的根目录下：
         docsDir: '/docs/blogs',
         // 假如文档放在一个特定的分支下：
