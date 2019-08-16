@@ -1,5 +1,5 @@
 module.exports = {
-    title:'马新想个人网站',
+    title:'马新想个人网站（webxiaoma）',
     head: [
         ["link", { rel: "icon", href: `https://webxiaoma.com/img/manong.jpg` }],
     ], //被注入页面 HTML <head> 额外的标签
@@ -12,37 +12,46 @@ module.exports = {
         nav: [  // 导航栏 使用了element 导航
             { text: '首页', link: '/' },
             // { text: '编程软件', link: "/weChatOfficialAccount/" },
-            { text: '电脑',items:[
-                { text: "移动硬盘", link:'/computer/hardDisk.html'},
-            ]},
+            { text: '实用软件', link: "/software/" },
+            { text: '电脑', link: '/computer/'},
             { text: '系统', items:[
-                { text: "Linux系统", link: '/system/deepin.html'},
-                { text: "黑苹果", link:'/system/ios.html'},
+                { text: "Window系统", link:'/system/window.html'},
+                { text: "Linux系统", link: '/system/linux.html'},
+                { text: "苹果系统", link:'/system/ios.html'},
             ]},
-            // { text: '实用软件', link: "/weChatOfficialAccount/" },
         ],
         sidebar: {  // 侧边栏
             "/programme/": [ // 编程
                 "",
             ],
             "/computer/": [ // 电脑
-                "hardDisk", // 移动硬盘
+                "", 
             ],
             "/system/":[ // 系统
+                {
+                    title: 'Window系统',
+                    collapsable: true, // 是否可折叠
+                    children: [
+                        'window',
+                    ]
+                },
                 {
                     title: 'Linux系统',
                     collapsable: true, // 是否可折叠
                     children: [
-                        'deepin',
+                        'linux',
                     ]
                 },
                 {
-                    title: '黑苹果系统',
+                    title: '系统',
                     collapsable: true, // 是否可折叠
                     children: [
                         'ios',
                     ]
                 }
+            ],
+            "software":[
+                ""
             ]
         },
         sidebarDepth:2,// 侧边栏最大层级 最大只能为2
