@@ -10,11 +10,10 @@ meta:
 # 关于Linux操作系统文章
 
 
-## Deepin 操作系统
+## 操作系统
 
 - [DeepIn官网](https://www.deepin.org/)
-- [安装DeepIn系统](https://www.deepin.org/installation/)
-
-
+- [Ubuntu Linux系统](https://www.ubuntu.com/download)
+- [CentOS Linux系统](https://wiki.centos.org/Download)
 
  

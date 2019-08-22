@@ -3,7 +3,7 @@ module.exports = {
     head: [
         ["link", { rel: "icon", href: `https://webxiaoma.com/img/manong.jpg` }],
     ], //被注入页面 HTML <head> 额外的标签
-    base:'/wechat-demo/docs/blogs/', // 部署站点的基础路径
+    base:'/tools-docs/docs/blogs/', // 部署站点的基础路径
     dest: "./blogs", //输出目录
     serviceWorker: true, //缓存那些已访问过的页面的内容
     themeConfig: {  // 导航
@@ -11,23 +11,55 @@ module.exports = {
         searchMaxSuggestions: 15, // 搜索设置数量
         nav: [  // 导航栏 使用了element 导航
             { text: '首页', link: '/' },
-            // { text: '编程软件', link: "/weChatOfficialAccount/" },
-            { text: '实用软件', link: "/software/" },
-            { text: '电脑', link: '/computer/'},
+            {text:"数据库",items:[
+                { text: "MySQL数据库", link:'/database/mysql-install.html'},
+            ]},
+            { text: '编程软件', items:[
+                { text: "Vscode", link:'/programme/vscode.html'},
+            ]},
+            // { text: '电脑', link: '/computer/'},
             { text: '系统', items:[
                 { text: "Window系统", link:'/system/window.html'},
                 { text: "Linux系统", link: '/system/linux.html'},
                 { text: "苹果系统", link:'/system/ios.html'},
             ]},
+            { text: '实用软件', link: "/software/" },
         ],
         sidebar: {  // 侧边栏
-            "/programme/": [ // 编程
-                "",
+            /**
+             * @msg 编程
+             */
+            "/programme/": [ 
+                {
+                    title: '编辑器',
+                    collapsable: true, // 是否可折叠
+                    children: [
+                        'vscode',
+                    ]
+                },
             ],
-            "/computer/": [ // 电脑
+
+            "/database/":[
+                {
+                    title: 'MySQL数据库',
+                    collapsable: true, // 是否可折叠
+                    children: [
+                        'mysql-install',
+                        'mysql',
+                    ]
+                },
+            ],
+             /**
+              * @msg 电脑
+              */
+            "/computer/": [
                 "", 
             ],
-            "/system/":[ // 系统
+
+            /**
+            * @msg 系统
+            */
+            "/system/":[
                 {
                     title: 'Window系统',
                     collapsable: true, // 是否可折叠

@@ -21,7 +21,7 @@ meta:
 - [百度云盘](https://pan.baidu.com/download)
 - [Mac 上提升百度云盘下载速度](https://yalv.me/aria2/)
 - [迅雷](https://www.xunlei.com/)
-
+- [ENFI下载器](http://enfi.cloud/#/index)
 
 
 ## 日常办公
