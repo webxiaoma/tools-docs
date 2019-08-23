@@ -8,9 +8,15 @@ meta:
 ---
 
 
-# MySql 数据库的安装使用
+# MySql 数据库初识
 
-- 官网下载`MySQL`数据库 [下载地址](https://dev.mysql.com/downloads/mysql/)
+
+
+
+## 常用网站
+
+- [官网MySQL数据库下载地址](https://dev.mysql.com/downloads/mysql/)
+- [MySQL系列知识](http://c.biancheng.net/view/2361.html)
 
 
 ## Window上的安装
@@ -24,7 +30,6 @@ meta:
 ## Mac 上的安装
 
 
-
 ## MySQL 可视化工具
 
 ### Window
@@ -35,3 +40,4 @@ meta:
 ### Mac
 
 - ``
+
